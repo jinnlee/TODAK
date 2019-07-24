@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--오른쪽으로 이동한다.-->
+
+    <translate
+        android:fromXDelta="0%p"
+        android:toXDelta="-100%p"
+        android:duration="500"
+        android:shareInterpolator="@android:anim/accelerate_decelerate_interpolator"
+        />
+
+    <!--100%p 이미지가 없어질때까지 이동-->
+</set>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="〈   비밀번호가 생각나셨나요?"
+        android:textSize="15dp"
+        android:clickable="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="비밀번호 찾기"
+            android:layout_marginBottom="5dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(가입하셨던 이메일로 인증번호를 보내드립니다.)"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이메일" />
+
+        <EditText
+            android:id="@+id/toSend_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@example.com" />
+
+        <Button
+            android:id="@+id/request_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인증번호 요청하기" />
+
+    </LinearLayout>
+</LinearLayout>

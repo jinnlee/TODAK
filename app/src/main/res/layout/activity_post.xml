@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/post_background"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/background1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--맨위 뒤로가기버튼 부분-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:text="〈   뒤로가기"
+            android:textColor="#d3fff7f7"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="메뉴"
+            android:textColor="#d3fff7f7"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <!--고민내용 + 댓글 부분-->
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:fillViewport="true">-->
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            &lt;!&ndash;고민내용부분&ndash;&gt;
+            <TextView
+                android:id="@+id/writeText"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:autoLink="web|phone|email"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:textColor="#d3fff7f7" />
+            &lt;!&ndash;android:layout_below="@id/time"&ndash;&gt;
+            &lt;!&ndash;android:hint="하고 싶은 말을 적어보세요 :)"&ndash;&gt;
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="by  "
+                    android:textColor="#d3fff7f7" />
+
+                <TextView
+                    android:id="@+id/writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#d3fff7f7" />
+                &lt;!&ndash;android:textColor="#d3fff7f7"&ndash;&gt;
+
+            </LinearLayout>
+
+            &lt;!&ndash;<View&ndash;&gt;
+            &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="1dp"&ndash;&gt;
+            &lt;!&ndash;android:background="#d3fff7f7" />&ndash;&gt;
+            &lt;!&ndash;&lt;!&ndash;android:background="#d3fff7f7"&ndash;&gt;&ndash;&gt;
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                &lt;!&ndash;<TextView&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/time"&ndash;&gt;
+                &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="20dp"&ndash;&gt;
+                &lt;!&ndash;android:layout_gravity="left"&ndash;&gt;
+                &lt;!&ndash;android:text="1분 전"&ndash;&gt;
+                &lt;!&ndash;android:textColor="#d3fff7f7" />&ndash;&gt;
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textColor="#d3fff7f7" />
+
+                <CheckBox
+                    android:id="@+id/heart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_heart_click"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/heart_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:paddingLeft="7dp"
+                    android:text="0"
+                    android:textColor="#d3fff7f7" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/chat"
+                    android:gravity="center_vertical" />
+                &lt;!&ndash;android:backgroundTint="#d3fff7f7"&ndash;&gt;
+
+                <TextView
+                    android:id="@+id/chat_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:paddingLeft="7dp"
+                    android:text="0"
+                    android:textColor="#d3fff7f7" />
+
+            </LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#d3fff7f7" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <com.baoyz.swipemenulistview.SwipeMenuListView
+                    android:id="@+id/post_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:focusable="true" />
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--댓글 높이 해결 : http://recipes4dev.tistory.com/49-->
+
+    <!--</ScrollView>-->
+
+    <!--댓글-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:hint="따뜻한 관심을 보여주세요"
+            android:textSize="15dp" />
+        <!--android:layout_weight="1"-->
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#c26b4c"
+            android:gravity="center"
+            android:text="보내기"
+            android:textColor="#fff7f7" />
+    </LinearLayout>
+</LinearLayout>
+
+
+

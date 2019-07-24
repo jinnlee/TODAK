@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="hidden" path="Pictures/Pictures/gyeom"/>
+    <!--xml에 기록한 name은 임시 값, path가 실제 값-->
+    <!--중요한 것은 gyeom이며, hidden은 겉으로 보여주기만 할 뿐, 실제 파일이 생성된 경로를 의미하는 것은 gyeom이다.-->
+</paths>

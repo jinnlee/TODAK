@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/write_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <!--android:background="@drawable/background1">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:text="〈   뒤로가기"
+            android:textColor="#d3fff7f7"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="올리기"
+            android:textColor="#d3fff7f7"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3fff7f7" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edit_gomin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#d3fff7f7"
+                android:textColorHint="#77fff7f7"
+                android:background="@null"/>
+            <!--android:layout_weight="1"-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    </ScrollView>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ImageView"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_gravity="center" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3fff7f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:backgroundTint="#ae000000"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/set_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:text="배경설정"
+            android:textColor="#d3fff7f7"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="|"
+            android:textColor="#d3fff7f7" />
+
+        <TextView
+            android:id="@+id/set_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="닉네임보이기"
+            android:textColor="#d3fff7f7"
+            android:textSize="15dp" />
+
+        <!--android:layout_alignParentRight="true"-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="|" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/set_share"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="공유허용"-->
+        <!--android:clickable="true"-->
+        <!--android:textSize="15dp" />-->
+    </LinearLayout>
+</LinearLayout>

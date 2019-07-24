@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gp62.todak">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Android 4.4(API 레벨 19)부터는 이 권한 필요 없음. API 레벨 18 이하에서만 이 권한이 필요함 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- <uses-feature android:name="android.hardware.Camera"/> -->
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE" />
+    <uses-permission android:name="android.permission.FLAG_GRANT_READ_URI_PERMISSION" />
+    <uses-permission android:name="android.permission.FLAG_GRANT_WRITE_URI_PERMISSION" />
+
+
+
+    <!-- android:label="@string/app_name" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/todakicon"
+        android:label="토닥토닥"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!--파일공유시, url 권한을 부여해야해서-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.gp62.todak.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <!-- android:theme="@style/AppTheme"> -->
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- <activity android:namSearchPassActivityvity" /> -->
+        <!-- <activity android:name=".LoginActivity"/> -->
+        <activity android:name=".WriteActivity"/>
+
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".PostActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".LoadingActivity" />
+        <activity
+            android:name=".GominListActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Import" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Gallery" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    <!--</group>-->
+
+    <item android:title="토닥토닥">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="토닥홈" />
+            <item
+                android:id="@+id/nav_write"
+                android:icon="@drawable/ic_edit_black_24dp"
+                android:title="고민남기기" />
+        </menu>
+    </item>
+
+    <item android:title="내정보">
+        <menu>
+            <item
+                android:id="@+id/nav_myInfo"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="내정보보기" />
+            <item
+                android:id="@+id/nav_good"
+                android:icon="@drawable/ic_favorite_black_24dp"
+                android:title="좋아요 한 고민" />
+        </menu>
+    </item>
+
+    <item android:title="기타">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_email_black_24dp"
+                android:title="개발자에게 1:1문의하기" />
+        </menu>
+    </item>
+
+</menu>

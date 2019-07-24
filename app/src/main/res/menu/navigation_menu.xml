@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:title="내 정보"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        />
+
+    <item
+        android:id="@+id/write"
+        android:title="고민 남기기"
+        android:icon="@drawable/ic_edit_black_24dp"
+        />
+    <item
+        android:id="@+id/like_list"
+        android:title="좋아요한 글"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        />
+    <item
+        android:id="@+id/call_developer"
+        android:title="개발자에게 1:1문의하기"
+        android:icon="@drawable/ic_email_black_24dp"
+        />
+</menu>
